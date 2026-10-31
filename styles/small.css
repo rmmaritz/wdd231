@@ -1,0 +1,213 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: center;
+  position: relative;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+header img {
+  width: 40px;
+  height: auto;
+}
+
+header span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* HAMBURGER BUTTON */
+#nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#nav-button::before {
+  content: "\2630";
+}
+
+#nav-button.show::before {
+  content: "\00D7";
+}
+
+/* NAVIGATION */
+.navigation {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: #004080;
+}
+
+.navigation a[aria-current="page"] {
+  background-color: black;
+}
+
+.navigation a:hover {
+  background-color: #0055aa;
+}
+
+/* MAIN */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* TOP CARDS */
+.top-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.about-me-content {
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+/* PHOTO */
+.photo-container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.student-photo {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* COURSE SECTION */
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.filter-buttons button {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #999;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-buttons button:hover {
+  background-color: #d0d0d0;
+}
+
+#courses {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
+}
+
+.course-card {
+  padding: 0.75rem;
+  text-align: center;
+  border: 1px solid #999;
+  background-color: #e0e0e0;
+  font-weight: 500;
+}
+
+.completed {
+  background-color: #4a3426;
+  color: white;
+}
+
+#credits {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social img {
+  width: 40px;
+  height: auto;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}

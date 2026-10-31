@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+
+  #nav-button {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation a {
+    padding: 1rem 2rem;
+  }
+
+  .top-cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .student-photo {
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+}

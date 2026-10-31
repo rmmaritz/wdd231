@@ -1,16 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/course.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <meta name="author" content="Rory O'Connell-Maritz">
+  <meta name="description" content="WDD 231 - Web Frontend Development I - Rory Maritz Home Page">
+  <title>WDD 231 - Rory Maritz</title>
+
 </head>
 
 <body>
-  <header>Welcome to WDD231</header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <img src="images/logo.svg" alt="Site Logo">
+    <span>Rory Maritz</span>
+
+    <button id="nav-button" aria-label="Menu" aria-expanded="false">
+    </button>
+
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="project/index.html">Final</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="top-cards">
+
+      <section class="card about-me">
+        <h2>About Me</h2>
+        <div class="about-me-content">
+          <p>
+            My name is Rory O'Connell-Maritz. I am a South African citizen and a member of The Church of Jesus Christ of
+            Latter-day Saints. I work as a Technical and Operations Director, responsible for the product development of
+            new
+            construction products and ensuring the operational efficiencies are maintained. I have 3 active sons.
+          </p>
+        </div>
+      </section>
+
+      <section class="card photo-card">
+        <h2>Student Photo</h2>
+
+        <div class="photo-container">
+          <img src="images/rory-maritz.webp" alt="Rory Maritz" class="student-photo">
+        </div>
+      </section>
+
+    </div>
+
+
+    <section class="card certificate-courses">
+      <h2>Web Certificate Courses</h2>
+
+      <div class="filter-buttons">
+        <button id="all">All</button>
+        <button id="wdd">WDD</button>
+        <button id="cse">CSE</button>
+      </div>
+
+      <div id="courses"></div>
+
+      <p id="credits"></p>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="social">
+      <a href="https://github.com/rmmaritz" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub">
+      </a>
+
+      <a href="https://www.linkedin.com/in/rory-o-connell-maritz-ba053925" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn">
+      </a>
+
+      <a href="https://www.facebook.com/rory.maritz/" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook">
+      </a>
+    </div>
+
+    <p>
+      &copy;
+      <span id="currentyear"></span> ‖ Rory Maritz ‖ Pretoria ‖ South Africa
+    </p>
+
+    <p id="lastModified"></p>
+
+
+  </footer>
 </body>
 
 </html>

@@ -6,6 +6,8 @@
 
   .navigation {
     display: block;
+    position: static;
+    width: auto;
   }
 
   .navigation ul {

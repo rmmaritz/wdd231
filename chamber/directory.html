@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Rory O'Connell-Maritz">
+  <meta name="description"
+    content="Business Directory for the Pretoria East Chamber of Commerce featuring local businesses, contact information, and membership details.">
+
+  <meta property="og:title" content="Pretoria East Chamber of Commerce Directory">
+  <meta property="og:description" content="Explore local businesses and chamber members in Pretoria East.">
+  <meta property="og:image" content="images/chamber-logo.webp">
+  <meta property="og:url" content="https://rmmaritz.github.io/wdd231/chamber/directory.html">
+
+  <link rel="icon" href="favicon-image.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;1,400&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/chamber-small.css">
+  <link rel="stylesheet" href="styles/chamber-large.css">
+
+  <script src="scripts/chamber.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+
+  <title>Pretoria East Chamber of Commerce | Directory</title>
+</head>
+
+<body>
+  <header>
+    <h1>Pretoria East Chamber of Commerce</h1>
+
+    <button id="menu" aria-label="Navigation Menu">
+      ☰
+    </button>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <h2>Business Directory</h2>
+
+    <div class="view-buttons">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </div>
+
+    <section id="members" class="grid">
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Pretoria East Chamber of Commerce
+    </p>
+
+    <p>
+      Rory O'Connell-Maritz | WDD 231
+    </p>
+
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

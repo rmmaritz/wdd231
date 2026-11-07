@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Dance Your Sox Off Suppliers",
+    "tagline": "Dancewear and Performance Apparel",
+    "email": "info@dancesox.co.za",
+    "phone": "082-563-8813",
+    "website": "https://dancesox.co.za",
+    "image": "images/dancesox.webp",
+    "membership": "Gold"
+  },
+  {
+    "name": "Dance Power Academy",
+    "tagline": "Feel the Power as You Move",
+    "email": "info@dancepower.co.za",
+    "phone": "012-555-1002",
+    "website": "https://www.dancepower.co.za",
+    "image": "images/dancepower.png",
+    "membership": "Silver"
+  },
+  {
+    "name": "Pretoria Logistics",
+    "tagline": "Reliable Transport & Logistics",
+    "email": "info@pretlog.co.za",
+    "phone": "012-555-1003",
+    "website": "https://www.pretlog.co.za",
+    "image": "images/transport.png",
+    "membership": "Gold"
+  },
+  {
+    "name": "Blue Sky Marketing",
+    "tagline": "Helping Businesses Grow",
+    "email": "info@bluesky.co.za",
+    "phone": "012-555-1004",
+    "website": "https://www.bluesky.co.za",
+    "image": "images/businessmarketing.avif",
+    "membership": "Silver"
+  },
+  {
+    "name": "Pretoria Builders",
+    "tagline": "Building Pretoria's Future",
+    "email": "info@builderspta.co.za",
+    "phone": "012-555-1005",
+    "website": "https://www.builderspta.co.za",
+    "image": "images/construction.jpg",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Capital Accounting",
+    "tagline": "Professional Accounting Services",
+    "email": "info@capitalacc.co.za",
+    "phone": "012-555-1006",
+    "website": "https://www.capitalacc.co.za",
+    "image": "images/accounting.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Pretoria Printing",
+    "tagline": "Print Solutions You Can Trust",
+    "email": "info@ptaprint.co.za",
+    "phone": "012-555-1007",
+    "website": "https://www.ptaprint.co.za",
+    "image": "images/printing.jpg",
+    "membership": "Silver"
+  }
+]

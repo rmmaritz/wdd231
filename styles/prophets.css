@@ -1,0 +1,62 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  color: #003366;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+#cards section {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+#cards h2 {
+  color: #003366;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+}
+
+#cards img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social img {
+  width: 40px;
+  height: auto;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}

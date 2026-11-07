@@ -24,6 +24,10 @@
     padding: .5rem;
   }
 
+  .logo {
+    width: 120px;
+  }
+
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }

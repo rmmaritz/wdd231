@@ -9,6 +9,25 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.site-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding-right: 4rem;
+}
+
 header,
 footer {
   background: var(--primary);
@@ -21,21 +40,14 @@ header {
   position: relative;
 }
 
-.site-name {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.site-name {
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 1.2;
-  padding-right: 5rem;
-}
-
 @media (max-width: 600px) {
+
+  .logo {
+    width: 50px;
+  }
+
   .site-name {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
 

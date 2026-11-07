@@ -21,15 +21,20 @@ header {
   position: relative;
 }
 
-header h1 {
-  margin: 0;
+.site-name {
   font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.site-name {
+  font-size: 1.8rem;
+  font-weight: bold;
   line-height: 1.2;
   padding-right: 5rem;
 }
 
 @media (max-width: 600px) {
-  header h1 {
+  .site-name {
     font-size: 1.4rem;
   }
 }
@@ -84,6 +89,10 @@ header h1 {
 .view-buttons button {
   padding: .75rem 1rem;
   margin: .25rem;
+}
+
+main h1 {
+  margin: 1rem;
 }
 
 .grid {

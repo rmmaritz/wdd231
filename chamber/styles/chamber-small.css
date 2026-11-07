@@ -191,5 +191,14 @@ header h1 {
 }
 
 .list .card-body {
-  flex-direction: row;
+  display: block;
+  padding: 1rem;
+}
+
+.list .card-body img {
+  display: none;
+}
+
+.list .contact-info {
+  width: 100%;
 }

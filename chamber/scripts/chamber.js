@@ -2,8 +2,12 @@ const membersContainer = document.querySelector("#members");
 
 async function getMembers() {
   const response = await fetch("data/members.json");
-  const data = await response.json();
 
+  if (!response.ok) {
+    throw Error("Member data could not be loaded.");
+  }
+
+  const data = await response.json();
   displayMembers(data);
 }
 

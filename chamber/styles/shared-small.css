@@ -124,6 +124,11 @@ footer {
 .footer-center img {
   width: 32px;
   height: auto;
+  transition: transform 0.2s ease;
+}
+
+.footer-center img:hover {
+  transform: scale(1.1);
 }
 
 .footer-left p,

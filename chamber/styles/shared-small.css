@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;;
 }
 
 header,
@@ -36,12 +36,6 @@ header {
 
 .title-group {
   flex: 1;
-}
-
-.site-name {
-  font-size: 1.4rem;
-  font-weight: bold;
-  line-height: 1.2;
 }
 
 .title-group p {

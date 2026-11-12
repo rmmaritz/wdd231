@@ -34,11 +34,13 @@
 }
 
 .hero-text {
-  color: white;
+  color: #ffffff;
+  background-color: rgba(0, 51, 102, 0.75);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, .8);
 }
 
 .cta-button {

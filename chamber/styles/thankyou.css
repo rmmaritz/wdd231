@@ -1,0 +1,35 @@
+.thankyou-card {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+}
+
+#results p {
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.thankyou-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1f4e79;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.action-button:hover {
+  background-color: #163a5c;
+}

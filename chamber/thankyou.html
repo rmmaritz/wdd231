@@ -25,8 +25,8 @@
   <link rel="stylesheet" href="styles/shared-small.css">
   <link rel="stylesheet" href="styles/shared-large.css">
   <link rel="stylesheet" href="styles/thankyou.css">
-  
-  <script src="scripts/thankyou.js"></script>
+
+  <script src="scripts/thankyou.js" defer></script>
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
 </head>
@@ -58,95 +58,23 @@
   </header>
 
   <main>
-    <h1>Join the Chamber</h1>
+    <h1>Membership Application Submitted</h1>
 
-    <div class="join-container">
+    <section class="thankyou-card">
+      <h2>Thank You!</h2>
 
-      <section class="membership-form">
-        <h2>Membership Application</h2>
+      <p>
+        Thank you for applying to join the Pretoria East Chamber of Commerce.
+        We have received your application and will contact you soon.
+      </p>
 
-        <form method="get" action="thankyou.html" class="join-form">
+      <div id="results"></div>
 
-          <label>
-            First Name
-            <input type="text" id="first-name" name="firstname" autocomplete="given-name" required>
-          </label>
-
-          <label>
-            Last Name
-            <input type="text" id="last-name" name="lastname" autocomplete="family-name" required>
-          </label>
-
-          <label>
-            Organizational Title
-            <input type="text" id="organization-title" name="organizationtitle" autocomplete="organization-title"
-              pattern="[A-Za-zÀ-ÿ\s\-]{7,}" title="Please enter at least seven letters, spaces, or hyphens.">
-          </label>
-
-          <label>
-            Email Address
-            <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
-          </label>
-
-          <label>
-            Mobile Phone Number
-            <input type="tel" id="mobile" name="mobile" autocomplete="tel" required>
-          </label>
-
-          <label>
-            Business or Organization Name
-            <input type="text" id="organization" name="organization" autocomplete="organization" required>
-          </label>
-
-          <fieldset>
-            <legend>Membership Level</legend>
-
-            <label>
-              <input type="radio" name="membership" value="np" required>
-              NP Membership
-            </label>
-
-            <label>
-              <input type="radio" name="membership" value="bronze">
-              Bronze Membership
-            </label>
-
-            <label>
-              <input type="radio" name="membership" value="silver">
-              Silver Membership
-            </label>
-
-            <label>
-              <input type="radio" name="membership" value="gold">
-              Gold Membership
-            </label>
-          </fieldset>
-
-          <label>
-            Business or Organization Description
-            <textarea id="organization-description" name="description" rows="5"></textarea>
-          </label>
-
-          <input type="hidden" id="timestamp" name="timestamp">
-
-          <button type="submit" class="submit-button">
-            Apply for Membership
-          </button>
-
-        </form>
-
-      </section>
-
-      <section class="membership-levels">
-        <h2>Membership Levels</h2>
-
-        <div id="membership-cards" class="membership-cards"></div>
-      </section>
-
-    </div>
-
-    <dialog id="membership-details"></dialog>
-
+      <div class="thankyou-actions">
+        <a href="join.html" class="action-button">Back to Join Page</a>
+        <a href="index.html" class="action-button">Return Home</a>
+      </div>
+    </section>
   </main>
   <footer>
 

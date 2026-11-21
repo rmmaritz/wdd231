@@ -70,62 +70,71 @@
 
           <label>
             First Name
-            <input type="text" id="first-name" name="firstname" autocomplete="given-name" required>
+            <input type="text" id="first-name" name="firstname" title="Enter your first name" autocomplete="given-name"
+              required>
           </label>
 
           <label>
             Last Name
-            <input type="text" id="last-name" name="lastname" autocomplete="family-name" required>
+            <input type="text" id="last-name" name="lastname" title="Enter your last name" autocomplete="family-name"
+              required>
           </label>
 
           <label>
             Organizational Title
             <input type="text" id="organization-title" name="organizationtitle" autocomplete="organization-title"
-              pattern="[A-Za-zÀ-ÿ\s\-]{7,}" title="Please enter at least seven letters, spaces, or hyphens.">
+              pattern="[A-Za-zÀ-ÿ\s\-]{7,}"
+              title="Enter your organizational title. Must contain at least seven letters, spaces, or hyphens.">
           </label>
 
           <label>
             Email Address
-            <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+            <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+              placeholder="name@example.com" required>
           </label>
 
           <label>
             Mobile Phone Number
-            <input type="tel" id="mobile" name="mobile" autocomplete="tel" required>
+            <input type="tel" id="mobile" name="mobile" title="Enter your mobile phone number" autocomplete="tel"
+              required>
           </label>
 
           <label>
             Business or Organization Name
-            <input type="text" id="organization" name="organization" autocomplete="organization" required>
+            <input type="text" id="organization" name="organization" title="Enter your business or organization name"
+              autocomplete="organization" required>
           </label>
 
           <fieldset>
             <legend>Membership Level</legend>
 
             <label>
-              <input type="radio" name="membership" value="np" required>
+              <input type="radio" id="np-membership" name="membership" value="np" title="Select NP Membership" required>
               NP Membership
             </label>
 
             <label>
-              <input type="radio" name="membership" value="bronze">
+              <input type="radio" id="bronze-membership" name="membership" value="bronze"
+                title="Select Bronze Membership">
               Bronze Membership
             </label>
 
             <label>
-              <input type="radio" name="membership" value="silver">
+              <input type="radio" id="silver-membership" name="membership" value="silver"
+                title="Select Silver Membership">
               Silver Membership
             </label>
 
             <label>
-              <input type="radio" name="membership" value="gold">
+              <input type="radio" id="gold-membership" name="membership" value="gold" title="Select Gold Membership">
               Gold Membership
             </label>
           </fieldset>
 
           <label>
             Business or Organization Description
-            <textarea id="organization-description" name="description" rows="5"></textarea>
+            <textarea id="organization-description" name="description" title="Describe your business or organization"
+              rows="5"></textarea>
           </label>
 
           <input type="hidden" id="timestamp" name="timestamp">

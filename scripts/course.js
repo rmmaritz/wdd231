@@ -1,3 +1,5 @@
+import { displayCourseDetails } from "./modals.js";
+
 const courses = [
   {
     subject: 'CSE',
@@ -70,7 +72,7 @@ function displayCourses(courseList) {
   courseContainer.innerHTML = "";
 
   courseList.forEach(course => {
-    const courseCard = document.createElement("div");
+    const courseCard = document.createElement("button");
 
     courseCard.classList.add("course-card");
 
@@ -79,6 +81,10 @@ function displayCourses(courseList) {
     }
 
     courseCard.textContent = `${course.subject} ${course.number}`;
+
+    courseCard.addEventListener("click", () => {
+      displayCourseDetails(course);
+    });
 
     courseContainer.appendChild(courseCard);
   });

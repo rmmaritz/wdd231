@@ -1,0 +1,47 @@
+{
+  "memberships": [
+    {
+      "name": "NP Membership",
+      "level": "np",
+      "cost": "Free",
+      "benefits": [
+        "Business directory listing",
+        "Access to Chamber networking events",
+        "Community information and updates"
+      ]
+    },
+    {
+      "name": "Bronze Membership",
+      "level": "bronze",
+      "cost": "R250 per month",
+      "benefits": [
+        "All NP membership benefits",
+        "Discounted Chamber events",
+        "Business directory promotion",
+        "Member networking opportunities"
+      ]
+    },
+    {
+      "name": "Silver Membership",
+      "level": "silver",
+      "cost": "R450 per month",
+      "benefits": [
+        "All Bronze membership benefits",
+        "Priority event registration",
+        "Enhanced business directory listing",
+        "Selected advertising opportunities"
+      ]
+    },
+    {
+      "name": "Gold Membership",
+      "level": "gold",
+      "cost": "R750 per month",
+      "benefits": [
+        "All Silver membership benefits",
+        "Premium business directory placement",
+        "Priority sponsorship opportunities",
+        "Featured Chamber promotions"
+      ]
+    }
+  ]
+}

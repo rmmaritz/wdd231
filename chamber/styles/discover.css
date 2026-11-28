@@ -96,7 +96,7 @@ dialog::backdrop {
 
 .dialog-image {
   width: 250px;
-  max-height: auto;
+  height: auto;
   display: block;
   border-radius: 8px;
   margin-bottom: 1rem;

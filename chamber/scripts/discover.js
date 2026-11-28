@@ -28,6 +28,7 @@ places.forEach((place, index) => {
             <img src="${place.image}"
                  alt="${place.name}"
                  loading="lazy"
+                 decoding="async"
                  width="300"
                  height="200">
         </figure>

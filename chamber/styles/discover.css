@@ -1,5 +1,3 @@
-/* Visitor Message */
-
 #visit-message {
   margin: 1rem;
   padding: 1rem;
@@ -9,15 +7,21 @@
   font-weight: bold;
 }
 
-/* Card Container */
-
 #cards {
   display: grid;
   gap: 1rem;
   padding: 1rem;
-}
 
-/* Cards */
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
 
 .card {
   display: flex;

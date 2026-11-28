@@ -1,4 +1,12 @@
-import { places } from "./places.mjs";
+async function getPlaces() {
+  const response = await fetch("./data/places.json");
+  const places = await response.json();
+
+  displayPlaces(places);
+}
+
+getPlaces();
+
 import { showVisitMessage } from "./visitor.js";
 
 showVisitMessage();
@@ -14,79 +22,70 @@ closeDialog.addEventListener("click", () => {
   dialog.close();
 });
 
-places.forEach((place, index) => {
+function displayPlaces(places) {
 
-  const card = document.createElement("section");
+  const cards = document.querySelector("#cards");
 
-  card.classList.add("card");
-  card.style.gridArea = `card${index + 1}`;
+  places.forEach((place, index) => {
 
-  card.innerHTML = `
-        <h2>${place.name}</h2>
+    const card = document.createElement("section");
 
-        <figure>
-            <img src="${place.image}"
-                 alt="${place.name}"
-                 loading="lazy"
-                 decoding="async"
-                 width="300"
-                 height="200">
-        </figure>
+    card.classList.add("card");
+    card.style.gridArea = `card${index + 1}`;
 
-        <address>${place.address}</address>
+    card.innerHTML = `
+            <h2>${place.name}</h2>
 
-        <p>${place.description}</p>
+            <figure>
+                <img src="${place.image}"
+                    alt="${place.name}"
+                    loading="lazy"
+                    decoding="async"
+                    width="300"
+                    height="200">
+            </figure>
 
-        <button class="learn-more">Learn More</button>
-    `;
+            <address>${place.address}</address>
 
-  const button = card.querySelector(".learn-more");
+            <p>${place.description}</p>
 
-  button.addEventListener("click", () => {
-
-    dialogTitle.textContent = place.name;
-
-    dialogContent.innerHTML = `
-            <img src="${place.image}"
-                 alt="${place.name}"
-                 class="dialog-image">
-
-            <p>
-                ${place.details || place.description}
-            </p>
-
-            <p>
-                <strong>Address:</strong>
-                ${place.address}
-            </p>
-
-            <p>
-                <strong>Hours:</strong>
-                ${place.hours || "See website for current hours"}
-            </p>
-
-            <p>
-                <strong>Admission:</strong>
-                ${place.cost || "See website for pricing"}
-            </p>
-
-            ${place.website
-        ? `<p>
-                        <a href="${place.website}"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Visit Website
-                        </a>
-                       </p>`
-        : ""
-      }
+            <button class="learn-more">
+                Learn More
+            </button>
         `;
 
-    dialog.showModal();
-  });
+    const button = card.querySelector(".learn-more");
 
-  cards.appendChild(card);
-});
+    button.addEventListener("click", () => {
+
+      dialogTitle.textContent = place.name;
+
+      dialogContent.innerHTML = `
+                <img src="${place.image}"
+                     alt="${place.name}"
+                     class="dialog-image">
+
+                <p>${place.details || place.description}</p>
+
+                <p><strong>Address:</strong> ${place.address}</p>
+                <p><strong>Hours:</strong> ${place.hours}</p>
+                <p><strong>Admission:</strong> ${place.cost}</p>
+
+                <p>
+                    <a href="${place.website}"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       Visit Website
+                    </a>
+                </p>
+            `;
+
+      dialog.showModal();
+    });
+
+    cards.appendChild(card);
+  });
+}
 
 dialog.addEventListener("click", (event) => {
   const rect = dialog.getBoundingClientRect();
